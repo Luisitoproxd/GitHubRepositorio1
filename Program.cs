@@ -17,6 +17,11 @@ Poblacion = ordenado.Values.ToArray ();
 for (var i= 0; i< Poblacion. Length; i++)
 Console.WriteLine ($"{Departamento [i],20} ==> {Poblacion [i],10:N0}");
  //Suma de toda la población y nombre de mayor y menor 
+Console.WriteLine ($"Datos Desordenados");
+foreach (var item in diccionario){
+    Console.WriteLine ($"{item.Key,-20}==>{item.Value,10:N0}");
+}
+Console.WriteLine ();   
 Console.WriteLine ($" Población General:{Poblacion. Sum():N0}");
 Console.WriteLine ($"Depto. con mayor Población:{maxDepkey}");
 Console.WriteLine ($"Depto. con menor Población:{minDepkey}");
