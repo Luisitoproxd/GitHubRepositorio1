@@ -26,3 +26,5 @@ Console.WriteLine ();
 Console.WriteLine ($" Población General:{Poblacion. Sum():N0}");
 Console.WriteLine ($"Depto. con mayor Población:{maxDepkey}");
 Console.WriteLine ($"Depto. con menor Población:{minDepkey}");
+//Poblacion promedio
+Console.WriteLine($"Población promedio: {diccionario.Values.Average():N2}");
