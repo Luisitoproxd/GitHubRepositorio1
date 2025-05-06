@@ -5,14 +5,9 @@ int[] Poblacion = { 185013, 197139, 439906, 190863, 530586, 414543, 229866, 2143
 Dictionary<string, int> diccionario = Departamento
 .Zip(Poblacion, (k, v)=> new {Clave = k, Valor = v})
 .ToDictionary (x => x.Clave, x => x.Valor);
-//Ordenando el diccionario de menor a mayor
-var ordenado = diccionario.OrderBy (x => x.Value).ToDictionary (x => x.Key, x => x.Value);
 //fijando los nombres de los departamen tos con menor y mayor poblacion
 string minDepkey = ordenado. First () .Key;
 string maxDepkey= ordenado. Last ().Key;
- //reasignación de los arreglos en paralelo 
-Departamento = ordenado.Keys.ToArray ();
-Poblacion = ordenado.Values.ToArray ();
 //Mostrar los arreglos ordenados de menor a mayor.
 for (var i= 0; i< Poblacion. Length; i++)
 Console.WriteLine ($"{Departamento [i],20} ==> {Poblacion [i],10:N0}");
