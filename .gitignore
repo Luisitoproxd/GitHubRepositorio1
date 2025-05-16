@@ -2,5 +2,5 @@
 *.sln
 .DS_Store
 bin/Debug/**/*.*
-obj/ Debug/**/*.*
+obj/Debug/**/*.*
 *.meta
