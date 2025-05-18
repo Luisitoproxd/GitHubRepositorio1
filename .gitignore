@@ -1,6 +1,6 @@
 *.csproj
 *.sln
 .DS_Store
-bin/Debug/**/*.*
-obj/Debug/**/*.*
+bin/
+obj/
 *.meta
